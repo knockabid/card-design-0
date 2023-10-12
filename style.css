@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Cabin", sans-serif;
+  font-family: "Gabarito", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Kanit", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  display: flex;
+  margin: 0 auto;
+  background-color: antiquewhite;
+  padding: 10px;
+  width: 60%;
+  gap: 50px;
+}
+.container .left-car-part img {
+  width: 100%;
+  border-radius: 5px;
+}
+.container .left-car-part,
+.left-car-partt {
+  width: 50%;
+}
+.card-size {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-size .child {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  padding: 10px;
+  margin: 2px;
+  border-radius: 3px;
+}
+.left-car-partt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.left-car-partt h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.left-car-partt h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.left-car-partt .right-side-btn {
+  display: flex;
+}
+
+.left-car-partt .right-side-btn .flla {
+  padding: 20px 50px;
+  border: none;
+  background-color: white;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .left-car-partt {
+    width: 100%;
+  }
+  .left-car-part {
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+  .card-size .child {
+    flex-wrap: nowrap;
+    width: 0px;
+    height: 0px;
+  }
+}
